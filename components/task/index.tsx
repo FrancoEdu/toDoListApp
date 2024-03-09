@@ -1,26 +1,39 @@
 import { TouchableOpacity, View, Text, Image } from "react-native";
 import { stylesTask } from "./style";
+import { TaskModel } from "../../shared/task.model";
 
-export function Task(){
-
-    const checked: boolean = false;
-
+export function Task(props: TaskModel){
     return(
         <View style={stylesTask.taskForm}>
-            <TouchableOpacity style={[
+            <TouchableOpacity 
+                style={[
                     stylesTask.radioButton, 
-                    checked === false ? 
+                    props.checked === false ? 
                     stylesTask.radioButtonFree : 
                     stylesTask.radioButtonChecked
                 ]}
-            ></TouchableOpacity>
+                onPress={props.onChecked}
+            >
+                {props.checked && (
+                    <Image
+                        source={require('../../assets/Vector.png')}
+                    />
+                )}
+            </TouchableOpacity>
             <View style={stylesTask.viewTaskDescription}>
-                <Text style={stylesTask.taskDescription}>
-                    Integer urna interdum massa libero auctor 
-                    neque turpis turpis semper.
+                <Text 
+                    style={[
+                        stylesTask.taskDescription,
+                        props.checked === false ? 
+                        stylesTask.taskDescription : 
+                        stylesTask.textLineMiddle
+                    ]}>
+                    {props.data}
                 </Text>
             </View>
-            <TouchableOpacity>
+            <TouchableOpacity
+                disabled={!props.checked}
+                onPress={props.onRemove}>
                 <Image
                     source={require('../../assets/trash.png')}
                 /> 

@@ -87,4 +87,20 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         gap: 10,
     },
+    listEmpty:{
+        textAlign: 'center',
+        color: '#808080',
+        fontWeight: '900',
+        marginVertical: 5
+    },
+    listEmptyBottom:{
+        textAlign: 'center',
+        color: '#333333',
+    },
+    viewListEmpty:{
+        marginTop: 40,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center'
+    }
   });
