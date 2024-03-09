@@ -99,7 +99,7 @@ export function Home(){
             <View style={styles.containerBottom}>
                 <View style={styles.dataCounter}>
                     <View style={styles.flexDisplay}>
-                        <Text style={styles.created}>Criadas</Text>
+                        <Text style={styles.created}>Abertas</Text>
                         <View style={styles.createdNumberContainer}>
                             <Text style={styles.createdNumber}>
                                 {updateTotalCreatedTasks()}
