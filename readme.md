@@ -20,7 +20,7 @@ Para executar o aplicativo localmente, siga estas etapas:
 1. Clone este repositório.
 2. Navegue até o diretório do projeto.
 3. Execute `npm install` para instalar as dependências.
-4. Execute `npm start` para iniciar o aplicativo.
+4. Execute `npx expo start` para iniciar o aplicativo.
 
 ## Uso
 
