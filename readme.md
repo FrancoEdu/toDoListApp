@@ -30,3 +30,8 @@ Após a instalação, abra o aplicativo em seu dispositivo móvel. Você será a
 - Excluir uma tarefa deslizando para a esquerda.
 - Marcar uma tarefa como concluída tocando no círculo à esquerda da tarefa.
 
+## Aplicação
+
+![Exemplar](/assets/toDoListApp.mp4)
+
+
